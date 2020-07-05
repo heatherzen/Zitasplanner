@@ -69,3 +69,39 @@ textarea{
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+
+.time {
+  display: flex;
+  justify-content: flex-end;
+  align-items: start;
+  border-top: solid;
+  border-top-color: lightgray;
+  padding-top: 5px;
+}
+
+.text-area {
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  background-color: lightgrey;
+  padding-top: 5px;
+}
+
+.btn {
+  background-color: rgb(29, 210, 216);
+  border-top: solid;
+  border-top-color: whitesmoke;
+  
+}
+
+.col-10 {
+  border-top: solid;
+  border-top-color: whitesmoke;
+}
+
+.container {
+  border-bottom: solid;
+  border-bottom-color: lightgray;
+  padding-bottom: 20px; 
+}
+
