@@ -87,7 +87,7 @@ textarea{
   padding-top: 5px;
 }
 
-.btn {
+.btn-style {
   background-color: rgb(29, 210, 216);
   border-top: solid;
   border-top-color: whitesmoke;
@@ -105,3 +105,8 @@ textarea{
   padding-bottom: 20px; 
 }
 
+.inner-text-area {
+  border: none;
+  background-color: lightgray;
+  resize: none;
+}
