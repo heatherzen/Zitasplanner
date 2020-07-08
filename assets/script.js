@@ -6,7 +6,8 @@
 
 var currentDay = document.getElementById("currentDay");
 var saveButton = document.getElementById("btn");
-var textInput = document.getElementById("input-event");
+
+
 
 function getCurrentDay() {
     let now = moment().format('LL'); 
@@ -19,13 +20,22 @@ var displayCurrentDay = function() {
 }
 //end of displayCurrentDay
 
-var saveTextInput = function(textInput) {
-    localStorage.setItem("textInput", textInput);
+var saveTextInput = function() {
+    var textInput = document.getElementById("input-event").value;
     console.log(textInput);
-}
+    localStorage.setItem('textInput', textInput);
+    
+};
+
+var getTextInput = function(event) {
+    event.preventDefault();
+    localStorage.getItem('textInput', saveTextInput);
+};
 
 
 getCurrentDay();
 displayCurrentDay();
+// saveTextInput(textInput);
+getTextInput();
 
 saveButton.addEventListener("click", saveTextInput);
